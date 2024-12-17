@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ModalTableViewController: UITableViewController, AddContactDelegate {
+class TableViewController: UITableViewController, AddContactDelegate {
     
    
 
@@ -31,8 +31,8 @@ class ModalTableViewController: UITableViewController, AddContactDelegate {
     }
     
 
-    @IBAction func openModalTableView(_ sender: Any) {
-        let View = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    @IBAction func openModalViewController(_ sender: Any) {
+        let View = storyboard?.instantiateViewController(withIdentifier: "ModalViewController") as! ModalViewController
         View.delegate = self
          View.modalPresentationStyle = .overCurrentContext
         present(View, animated: true)

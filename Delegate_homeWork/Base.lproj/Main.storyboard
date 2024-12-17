@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Modal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Delegate_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalViewController" id="BYZ-38-t0r" customClass="ModalViewController" customModule="Delegate_homeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="970.2290076335878" y="-27.464788732394368"/>
         </scene>
-        <!--Modal Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="XQy-Wd-uHe">
             <objects>
-                <tableViewController id="m0M-Fx-awB" customClass="ModalTableViewController" customModule="Delegate_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="m0M-Fx-awB" customClass="TableViewController" customModule="Delegate_homeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="91r-gf-Cbj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" id="wGS-xG-30E">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Qg3-c6-X51">
                             <connections>
-                                <action selector="openModalTableView:" destination="m0M-Fx-awB" id="Rme-ak-Ycb"/>
+                                <action selector="openModalViewController:" destination="m0M-Fx-awB" id="1lK-3T-3YT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

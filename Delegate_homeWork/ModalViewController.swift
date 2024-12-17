@@ -11,7 +11,7 @@ protocol AddContactDelegate {
     func addContact(_ contact: String)
 }
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class ModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var delegate: AddContactDelegate?
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissModal))
-        tap.delegate = self
+        tap.delegate = self //delegate UIGestureRecognizer
         view.addGestureRecognizer(tap)
         
         myView.layer.cornerRadius = 20
